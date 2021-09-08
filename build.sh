@@ -6,6 +6,7 @@ read user
 echo $user
 cp /home/$user/artixRice/.xinitrc /home/$user
 cp -r  /home/$user/aritxRice/.themes /home/$user
+cp -r  /home/$user/aritxRice/.oh-my-zsh /home/$user
 cp /home/$user/aritxRice/.arch.png /home/$user
 cp /home/$user/aritxRice/.zshrc /home/$user
 cd home/$user/artixRice
@@ -26,9 +27,5 @@ gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
 feh --bg-scale /home/$user/.arch.png
 xcompmgr -c -r 0
 
-
-
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 source .zshrc
