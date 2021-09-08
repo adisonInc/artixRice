@@ -1,6 +1,6 @@
 #/bin/bash
 
-sudo pacman -S feh zsh xcompmgr xorg-xinit make xorg-server curl ttf-fira-code
+sudo pacman -S feh zsh xorg-xinit xorg-server curl ttf-fira-code make
 echo "provide your username"
 read user
 echo $user
